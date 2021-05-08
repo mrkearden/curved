@@ -1,0 +1,42 @@
+!------ Skeleton for body section -----
+Body 1
+  Name = GrCylinder_005.unv_Volumes
+End
+
+Body 2
+  Name = GrCylinder_007.unv_Volumes
+End
+
+Body 3
+  Name = GrCylinder_006.unv_Volumes
+End
+
+!------ Skeleton for boundary section -----
+Boundary Condition 1
+  Name = GrCylinder_005.unv_Faces
+End
+
+Boundary Condition 2
+  Name = Low1
+End
+
+Boundary Condition 3
+  Name = GrCylinder_007.unv_Faces
+End
+
+Boundary Condition 4
+  Name = High1
+End
+
+Boundary Condition 5
+  Name = GrCylinder_006.unv_Faces
+End
+
+Boundary Condition 6
+  Name = Low2
+End
+
+Boundary Condition 7
+  Name = High2
+End
+

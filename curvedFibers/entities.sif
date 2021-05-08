@@ -1,0 +1,14 @@
+!------ Skeleton for body section -----
+Body 1
+  Name = High
+End
+
+Body 2
+  Name = Low
+End
+
+Body 3
+  Name = body6
+End
+
+!------ Skeleton for boundary section -----

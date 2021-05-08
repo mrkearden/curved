@@ -1,0 +1,100 @@
+ELMER SOLVER (v 9.0) STARTED AT: 2021/05/07 11:41:02
+ParCommInit:  Initialize #PEs:            1
+MAIN: 
+MAIN: =============================================================
+MAIN: ElmerSolver finite element software, Welcome!
+MAIN: This program is free software licensed under (L)GPL
+MAIN: Copyright 1st April 1995 - , CSC - IT Center for Science Ltd.
+MAIN: Webpage http://www.csc.fi/elmer, Email elmeradm@csc.fi
+MAIN: Version: 9.0 (Rev: Release, Compiled: 2021-01-22)
+MAIN:  Running one task without MPI parallelization.
+MAIN:  Running with just one thread per task.
+MAIN:  Lua interpreted linked in.
+MAIN: =============================================================
+LoadInputFile: Reading only "Run Control" section
+MAIN: 
+MAIN: 
+MAIN: -------------------------------------
+MAIN: Reading Model: C:\Users\tl393\Downloads\curvedFiber\case.sif
+ Caught LUA error:...0-Release/share/elmersolver/lua-scripts/defaults.lua:58: C:Users	l393DownloadscurvedFibercase.sif: Invalid argument
+LoadInputFile: Scanning input file: C:\Users\tl393\Downloads\curvedFiber\case.sif
+LoadInputFile: Scanning only size info
+LoadInputFile: First time visiting
+LoadInputFile: Reading base load of sif file
+LoadInputFile: Loading input file: C:\Users\tl393\Downloads\curvedFiber\case.sif
+LoadInputFile: Reading base load of sif file
+LoadInputFile: Number of BCs: 4
+LoadInputFile: Number of Body Forces: 0
+LoadInputFile: Number of Initial Conditions: 0
+LoadInputFile: Number of Materials: 2
+LoadInputFile: Number of Equations: 1
+LoadInputFile: Number of Solvers: 1
+LoadInputFile: Number of Bodies: 3
+ElmerAsciiMesh: Base mesh name: ./.
+ReadTargetNames: Reading names info from file: ././mesh.names
+WARNING:: ReadTargetNames: Could not map name to Body nor BC: body3
+WARNING:: ReadTargetNames: Could not map name to Body nor BC: bnry3
+LoadMesh: Elapsed REAL time:     0.0270 (s)
+MAIN: -------------------------------------
+AddVtuOutputSolverHack: Adding ResultOutputSolver to write VTU output in file: case
+OptimizeBandwidth: ---------------------------------------------------------
+OptimizeBandwidth: Computing matrix structure for: static current conduction...done.
+OptimizeBandwidth: Half bandwidth without optimization: 760
+OptimizeBandwidth: 
+OptimizeBandwidth: Bandwidth Optimization ...done.
+OptimizeBandwidth: Half bandwidth after optimization: 132
+OptimizeBandwidth: ---------------------------------------------------------
+ElmerSolver: Number of timesteps to be saved: 1
+MAIN: 
+MAIN: -------------------------------------
+MAIN:  Steady state iteration:            1
+MAIN: -------------------------------------
+MAIN: 
+StatCurrentSolve: -------------------------------------
+StatCurrentSolve: STAT CURRENT SOLVER:
+StatCurrentSolve: -------------------------------------
+StatCurrentSolve: Static current iteration: 1
+StatCurrentSolve:  Assembly (s)          :   1.9000000000000017E-002
+   gcr:     1  0.2862E-01  0.1485E+00
+   gcr:     2  0.1187E-01  0.2604E-01
+   gcr:     3  0.6307E-02  0.1005E-01
+   gcr:     4  0.4807E-02  0.4084E-02
+   gcr:     5  0.3954E-02  0.2734E-02
+   gcr:     6  0.3094E-02  0.2461E-02
+   gcr:     7  0.2404E-02  0.1949E-02
+   gcr:     8  0.2156E-02  0.1063E-02
+   gcr:     9  0.2079E-02  0.5701E-03
+   gcr:    10  0.1996E-02  0.5815E-03
+   gcr:    11  0.1351E-02  0.1469E-02
+   gcr:    12  0.4985E-03  0.1256E-02
+   gcr:    13  0.1529E-03  0.4745E-03
+   gcr:    14  0.3481E-04  0.1489E-03
+   gcr:    15  0.7994E-05  0.3388E-04
+   gcr:    16  0.1494E-05  0.7854E-05
+   gcr:    17  0.2418E-06  0.1474E-05
+   gcr:    18  0.3694E-07  0.2390E-06
+   gcr:    19  0.6867E-08  0.3630E-07
+   gcr:    20  0.1324E-08  0.6738E-08
+   gcr:    21  0.3202E-09  0.1285E-08
+   gcr:    22  0.7160E-10  0.3121E-09
+ComputeChange: NS (ITER=1) (NRM,RELC): (  1.0000000      2.0000000     ) :: static current conduction
+StatCurrentSolve:  Solve (s)             :   1.0000000000000009E-002
+StatCurrentSolve:  Total Heating Power   :   5.0966411772203600E-011
+StatCurrentSolve: Static current iteration: 2
+StatCurrentSolve:  Assembly (s)          :   1.5999999999999903E-002
+ComputeChange: NS (ITER=2) (NRM,RELC): (  1.0000000      0.0000000     ) :: static current conduction
+StatCurrentSolve:  Solve (s)             :   4.0000000000000036E-003
+StatCurrentSolve:  Total Heating Power   :   5.0966411868945035E-011
+ComputeChange: SS (ITER=1) (NRM,RELC): (  1.0000000      2.0000000     ) :: static current conduction
+ResultOutputSolver: -------------------------------------
+ResultOutputSolver: Saving with prefix: case
+ResultOutputSolver: Creating list for saving - if not present
+CreateListForSaving: Field Variables for Saving
+ResultOutputSolver: Saving in unstructured VTK XML (.vtu) format
+VtuOutputSolver: Saving results in VTK XML format with prefix: case
+VtuOutputSolver: Saving number of partitions: 1
+ResultOutputSolver: -------------------------------------
+ElmerSolver: *** Elmer Solver: ALL DONE ***
+ElmerSolver: The end
+SOLVER TOTAL TIME(CPU,REAL):         0.61        0.61
+ELMER SOLVER FINISHED AT: 2021/05/07 11:41:02

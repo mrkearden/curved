@@ -1,0 +1,12 @@
+! ----- names for bodies -----
+$ GrCylinder_005.unv_Volumes = 1
+$ GrCylinder_007.unv_Volumes = 2
+$ GrCylinder_006.unv_Volumes = 3
+! ----- names for boundaries -----
+$ GrCylinder_005.unv_Faces = 1
+$ Low1 = 2
+$ GrCylinder_007.unv_Faces = 3
+$ High1 = 4
+$ GrCylinder_006.unv_Faces = 5
+$ Low2 = 6
+$ High2 = 7

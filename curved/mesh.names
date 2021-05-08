@@ -1,0 +1,5 @@
+! ----- names for bodies -----
+$ High = 4
+$ Low = 5
+$ body6 = 6
+! ----- names for boundaries -----
